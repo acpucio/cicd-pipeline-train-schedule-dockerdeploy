@@ -32,8 +32,8 @@ pipeline {
                         app.push("latest")
                     }
                 }
+            }
         }
-        
         stage('DeployToProduction') {
             when {
                 branch 'master'
@@ -56,5 +56,4 @@ pipeline {
             }
         }
     }
-}
 }
